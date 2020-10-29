@@ -10,36 +10,20 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Syne+Tactile&display=swap" rel="stylesheet">
-
-
     <style>
-        #home img{
-            max-width: 100%;
-        }
+    .video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
 
-        .ui-body-c, .ui-header {
-            font-family: 'Noto Sans TC', sans-serif;
-        }
-        .ui-footer {
-            font-family: 'Syne Tactile', cursive;
-        }
-        
-        .video-wrapper{
-            position: relative;
-            padding-bottom: 56.25%;
-            overflow: hidden;
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0; 
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }</style>
     <title>台南之旅</title>
 </head>
 <body>
@@ -53,33 +37,12 @@
         <div role="main" class="ui-content">
             <h1>推薦台南一日遊</h1>
             <p>來台南怕無聊？看完保證您三天兩夜都玩不完！</p>
-            <img src="https://picsum.photos/1024/600" alt="">
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#page01">
-                    <img src="https://picsum.photos/300" alt="">
-                    <h2>歷史地理</h2>
-                    <p>台南的文明歷史與地理........</p>
-                </a></li>
-                <li><a href="#page02">
-                    <img src="https://picsum.photos/200" alt="">
-                    <h2>在地美食</h2>
-                    <p>來台南必吃美食!沒吃過別說來過台南!</p>
-                </a></li>
-                <li><a href="#page03">
-                    <img src="https://picsum.photos/400" alt="">
-                    <h2>好玩景點</h2>
-                    <p>台南必踩景點,適合家庭、小情侶約會好所在~</p>
-                </a></li>
-                <li><a href="#page04">
-                    <img src="https://picsum.photos/100" alt="">
-                    <h2>交通資訊</h2>
-                    <p></p>
-                </a></li>
-                <li><a href="#aboutus">
-                    <img src="https://picsum.photos/500" alt="">
-                    <h2>關於我們</h2>
-                    <p></p>
-                </a></li>
+            <ul>
+                <li><a href="#page01"　data-transition="slide" data-role="button" data-role="controlgroup" data-type="horizontal">歷史地理</a></li>
+                <li><a href="#page02"　data-transition="slide" data-role="button" data-role="controlgroup" data-type="horizontal">在地美食</a></li>
+                <li><a href="#page03"　data-transition="slide" data-role="button" data-role="controlgroup" data-type="horizontal">好玩景點</a></li>
+                <li><a href="#page04"　data-transition="slide" data-role="button" data-role="controlgroup" data-type="horizontal">交通資訊</a></li>
+                <li><a href="#aboutus"　data-transition="slide" data-role="button" data-role="controlgroup" data-type="horizontal">關於我們</a></li>
             </ul>
         </div>
 
